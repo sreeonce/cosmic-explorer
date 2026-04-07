@@ -1,0 +1,69 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Planets">
+    <section class="header" style="
+  background-image: url('/Figma/home-footer.png');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+">
+  <img src="/Figma/logo.png" style="
+    height: 50px;
+    width: auto;
+  ">
+
+  <a href="/">
+    <img src="/Figma/back-icon.png" style="
+      height: 60px;
+      width: auto;
+      cursor: pointer;
+    ">
+  </a>
+</section>
+    <!-- TITLE -->
+  <section class="sub-page">
+    <h1>PLANETS</h1>
+    <p class="info">
+      The planets of our solar system are diverse worlds, each with its own story to tell. From rocky surfaces to massive gas giants, they showcase the beauty of cosmic variety. Some planets burn with intense heat, while others remain frozen in the dark. They orbit the Sun in perfect balance, shaping the structure of our solar neighbourhood. Explore these fascinating worlds and uncover what makes each one unique. 🚀
+    </p>
+  </section>
+
+  <section class="planet-cards" style="background-image: url('/Figma/home-footer.png')">
+    <div class="planet-card-rows">
+      <button class="more-btn" style="background-image: url('/Figma/mercury.jpg');">
+        MERCURY
+      </button>
+      <button class="more-btn" style="background-image: url('/Figma/venus.jpg');">
+        VENUS
+      </button>
+      <button class="more-btn" style="background-image: url('/Figma/earth.jpeg');">
+        EARTH
+      </button>
+    </div>
+    <div class="planet-card-rows">
+        <a href="/mars">
+      <button class="more-btn" style="background-image: url('/Figma/mars.jpg');">
+        MARS
+      </button>
+    </a>
+      <button class="more-btn" style="background-image: url('/Figma/jupiter.jpg');">
+        JUPITER
+      </button>
+      <button class="more-btn" style="background-image: url('/Figma/saturn.jpg');">
+        SATURN
+      </button>
+    </div>
+    <div class="planet-card-rows">
+      <button class="more-btn" style="background-image: url('/Figma/uranus.jpg');">
+        URANUS
+      </button>
+      <button class="more-btn" style="background-image: url('/Figma/neptune.jpg');">
+        NEPTUNE
+      </button>
+    </div>
+  </section>
+</MainLayout>

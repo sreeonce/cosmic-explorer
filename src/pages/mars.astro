@@ -1,0 +1,99 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Planets">
+    <section class="header" style="
+  background-image: url('/Figma/home-footer.png');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+">
+  <img src="/Figma/logo.png" style="
+    height: 50px;
+    width: auto;
+  ">
+
+  <a href="/planets">
+    <img src="/Figma/back-icon.png" style="
+      height: 60px;
+      width: auto;
+      cursor: pointer;
+    ">
+  </a>
+</section>
+<section class="sub-page">
+    <h1>MARS</h1>
+    <p class="info">
+      The Red Planet. Known for its dusty landscape and potential for life.
+    </p>
+  </section>
+  <section class="fact-section" style="background-image: url('/Figma/home-footer.png');">
+    <div class="facts">
+      <img class="fact-img" src='/Figma/mars-dust-storm.jpg'>
+      <p class="fact-info" style="color: white;">Mars appears red because its surface is covered in iron oxide, commonly known as rust. This gives the planet its distinctive reddish color when viewed from space. The dust storms on Mars can spread this red dust across the entire planet. Due to this, Mars looks bright and noticeable even from Earth. Its color has fascinated humans for centuries and inspired many myths.</p>
+    </div>
+  </section>
+  <section class="fact-section" style="background-image: url('/Figma/home-footer.png');">
+    <div class="facts">
+        <p class="fact-info">Olympus Mons on Mars is the largest volcano ever discovered. It stands about three times taller than Mount Everest on Earth. The volcano is so wide that you wouldn’t even notice you are on it from the ground. It formed due to long-lasting volcanic activity without plate movement. This makes Mars geologically unique compared to Earth.</p>
+      <img class="fact-img" src='/Figma/mars-volcano.png'>
+    </div>
+  </section>
+<section class="fact-section" style="background-image: url('/Figma/home-footer.png');">
+    <div class="facts">
+      <img class="fact-img" src='/Figma/mars-water.png'>
+      <p class="fact-info" style="color: white;">Although Mars is very dry today, it has water frozen in its polar ice caps. These caps grow and shrink depending on the seasons. Scientists believe Mars once had liquid water flowing on its surface. Evidence of ancient rivers and lakes has been found. This raises the possibility that life may have existed there in the past.</p>
+    </div>
+  </section>
+  <section class="fact-section" style="background-image: url('/Figma/home-footer.png');">
+    <div class="facts">
+        <p class="fact-info">Mars is known for its powerful dust storms that can cover the entire planet. These storms can last for weeks or even months. They reduce visibility and can block sunlight from reaching the surface. This makes it challenging for solar-powered rovers to operate. Despite this, missions continue to study these extreme weather patterns.</p>
+      <img class="fact-img" src='/Figma/mars-massive.png'>
+    </div>
+  </section>
+  <section class="fact-section" style="background-image: url('/Figma/home-footer.png');">
+    <div class="facts">
+      <img class="fact-img" src='/Figma/mars-moon.jpg'>
+      <p class="fact-info" style="color: white;">Mars has two moons named Phobos and Deimos. They are much smaller and irregularly shaped compared to Earth’s Moon. Scientists believe they may be captured asteroids. Phobos is slowly moving closer to Mars and may break apart in the future. These moons add to the mystery and uniqueness of the planet.</p>
+    </div>
+  </section>
+  <section class="fact-section" style="background-image: url('/Figma/home-footer.png');">
+    <div class="facts">
+        <p class="fact-info">Mars is much colder than Earth because it is farther from the Sun. The average temperature on Mars is around -60 degrees Celsius. At night, temperatures can drop as low as -125 degrees Celsius. The thin atmosphere on Mars cannot trap heat effectively. This makes survival very difficult without advanced technology.</p>
+      <img class="fact-img" src='/Figma/mars-cold.jpg'>
+    </div>
+  </section>
+  <section class="footer">
+  <p class="more-text" style="opacity: 100%; padding-left: 35px;">
+    Watch the video below to know more!
+  </p>
+
+  <div style="
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  ">
+    <div style="
+      width: 90%;
+      max-width: 800px;
+      aspect-ratio: 16/9;
+    ">
+      <iframe 
+        src="https://www.youtube.com/embed/Vy_RPd0rblI"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
+        style="
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        "
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+</MainLayout>

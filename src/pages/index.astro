@@ -1,0 +1,76 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/global.css";
+---
+
+<MainLayout title="Cosmic Explorer">
+
+  <!-- TITLE -->
+  <section class="maintitle">
+    <h1>COSMIC EXPLORER</h1>
+    <h2>UNCOVER THE WONDERS OF SPACE</h2>
+  </section>
+
+  <!-- PLANETS -->
+  <section class="sub-section" style="background-image: url('/Figma/home-planets.png');">
+    <h1 class="name">PLANETS</h1>
+    <p class="info">
+      The planets in our solar system are diverse and fascinating worlds. Each one holds unique features, from rocky terrains to massive storms. They reveal the beauty and complexity of our universe. Discover more as you explore these incredible worlds.
+    </p>
+    <a href="/planets">
+      <button class="explore-btn">Explore</button>
+    </a>
+  </section>
+
+  <!-- STARS -->
+  <section class="sub-section" style="background-image: url('/Figma/home-stars.png');">
+    <h1 class="name">STARS</h1>
+    <p class="info">
+      Stars are the building blocks of the universe, shining across vast distances. They vary in size, temperature, and brightness. Some live for billions of years, while others burn out quickly. Take a closer look at these luminous giant
+    </p>
+    <button class="explore-btn">Explore</button>
+  </section>
+
+  <!-- SOLAR SYSTEM -->
+  <section class="sub-section" style="background-image: url('/Figma/home-solarsystem.png');">
+    <h1 class="name">SOLAR SYSTEM</h1>
+    <p class="info">
+      Our solar system is home to a diverse collection of planets and celestial bodies. Each planet orbits the Sun in a delicate balance. From inner rocky worlds to distant icy regions, it holds incredible variety. Discover how everything comes together.
+    </p>
+    <button class="explore-btn">Explore</button>
+  </section>
+
+  <!-- GALAXIES -->
+  <section class="sub-section" style="background-image: url('/Figma/home-galaxies.png');">
+    <h1 class="name">GALAXIES</h1>
+    <p class="info">
+      Galaxies are vast systems filled with stars, planets, and cosmic dust. They exist in countless shapes and sizes across the universe. Each galaxy tells a story of formation and evolution. Step into the scale of the cosmos.
+    </p>
+    <button class="explore-btn">Explore</button>
+  </section>
+
+  <!-- FOOTER TOP -->
+  <section class="footer">
+    <p class="more-text">AND MORE...</p>
+
+    <div class="more-btns">
+      <a href="factgenerator">
+        <button class="more-btn" style="background-image: url('/Figma/fact-gen.jpg');">
+        FACT GENERATOR
+      </button>
+      </a>
+      <a href="weightcalculator">
+        <button class="more-btn" style="background-image: url('/Figma/weight-calc.jpg');">
+        WEIGHT CALCULATOR
+      </button>
+      </a>
+      <a href="nasaimage">
+        <button class="more-btn" style="background-image: url('/Figma/nasa-img.png');">
+          IMAGES FROM NASA
+        </button>
+      </a>
+    </div>
+  </section>
+
+
+</MainLayout>

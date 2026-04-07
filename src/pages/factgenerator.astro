@@ -1,0 +1,33 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import FactGenerator from "../components/FactGenerator.jsx";
+import "../styles/global.css";
+---
+
+<MainLayout title="Space Facts">
+  <section class="header" style="
+  background-image: url('/Figma/home-footer.png');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+">
+  <img src="/Figma/logo.png" style="
+    height: 50px;
+    width: auto;
+  ">
+
+  <a href="/">
+    <img src="/Figma/back-icon.png" style="
+      height: 60px;
+      width: auto;
+      cursor: pointer;
+    ">
+  </a>
+</section>
+
+  <section class="fact-page">
+    <FactGenerator client:load />
+  </section>
+
+</MainLayout>

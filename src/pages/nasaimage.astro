@@ -1,0 +1,45 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import NasaImage from "../components/NasaImage.jsx";
+import "../styles/global.css";
+---
+
+<MainLayout title="NASA Image of the Day">
+<section class="header" style="
+  background-image: url('/Figma/home-footer.png');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+">
+  <img src="/Figma/logo.png" style="
+    height: 50px;
+    width: auto;
+  ">
+
+  <a href="/">
+    <img src="/Figma/back-icon.png" style="
+      height: 60px;
+      width: auto;
+      cursor: pointer;
+    ">
+  </a>
+  </section>
+  <!-- Page Title -->
+  <section class="nasa-title">
+    <h1 class="page-title">NASA IMAGE OF THE DAY</h1>
+  </section>
+
+  <!-- NASA Image Section -->
+  <section class="nasa-image">
+    <NasaImage client:load />
+    
+    <!-- Fallback for no JS -->
+    <noscript>
+      <p style="color: white; text-align: center; padding: 50px 20px;">
+        Enable JavaScript to view today's NASA image.
+      </p>
+    </noscript>
+  </section>
+
+</MainLayout>
