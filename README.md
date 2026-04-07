@@ -61,12 +61,26 @@ npm run preview
 
 ```text
 /
-├── public/               # Static assets like images
+├── public/
+    └── Figma
 ├── src/
-│   ├── components/       # React/Astro components
-│   └── pages/            # Astro pages
-├── package.json
+│   ├── components/
+│       ├── FactGenerator.jsx
+│       ├── NasaImage.jsx
+|       ├── WeightCalculator.jsx
+|   └── layouts/
+|       ├── MainLayout.astro
+│   └── pages/
+|       ├── factgenerator.astro
+|       ├── index.astro
+|       ├── mars.astro
+|       ├── nasaimage.astro
+|       ├── planets.astro
+|       ├── weightcalculator.astro
+|   └── styles/
+        ├── global.css
 ├── astro.config.mjs
+├── package.json
 └── tsconfig.json
 ```
 
