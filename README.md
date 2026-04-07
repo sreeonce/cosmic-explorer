@@ -1,72 +1,103 @@
-# Astro Starter Kit: Minimal
-
-```sh
-npm create astro@latest -- --template minimal
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
 # 🌌 Cosmic Explorer
 
-An interactive space-themed web application built using Astro and React.  
-Explore planets, discover space facts, view NASA’s Image of the Day, and calculate your weight across different planets.
+An interactive, space-themed web application built with **Astro** and **React**.  
+Explore planets, discover random space facts, view NASA’s Image of the Day, and calculate your weight on different planets.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 Cosmic Explorer is designed to make learning about space engaging and interactive.  
-The application combines static pages with dynamic widgets to provide an immersive user experience.
+The app features:
+
+- **Planets Page** – View cards for planets with interesting facts and images.  
+- **Fact Generator** – Click a button to reveal random space facts.  
+- **NASA Image of the Day** – Fetches the latest image and description using NASA’s APOD API.  
+- **Planet Weight Calculator** – Enter your Earth weight and see your weight on any planet in our solar system.  
+
+This combination of static pages and interactive widgets creates a fun, educational experience for users.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- Astro
-- React
-- CSS
-- NASA APOD API
+- **Astro** – Framework for building fast, content-focused websites.  
+- **React** – Used for interactive components.  
+- **CSS** – Custom styling for cosmic-themed UI.  
+- **NASA APOD API** – Fetching the daily image of space.  
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-1. Clone the repository:
+1. **Clone the repository**  
 ```bash
 git clone https://github.com/YOUR_USERNAME/cosmic-explorer.git
+cd cosmic-explorer
+
+2. **Install dependencies**  
+```bash
+npm install
+
+3. **Run the development server**  
+```bash
+npm run dev
+
+4. **Open your browser at http://localhost:4321
+ to view the app.**  
+
+5. **Build for production**  
+```bash
+npm run build
+npm run preview
+
+---
+
+## Project Structure
+
+/
+├── public/               # Static assets like images
+├── src/
+│   ├── components/       # React/Astro components
+│   └── pages/            # Astro pages
+├── package.json
+├── astro.config.mjs
+└── tsconfig.json
+
+---
+
+## Pages Overview
+
+| Page/Component            | Description                                                                               |
+| :------------------------ | :---------------------------------------------------------------------------------------- |
+| /index                    | Home page introducing the Cosmic Explorer app                                             |
+| /planets                  | Displays cards for different planets                                                      |
+| /mars                     | A detailed page about Mars with photos, facts and a video.                                |
+| /factgenerator            | Interactive widget that shows a random space fact each time the user clicks a button.     |
+| /weightcalculator         | Client-side calculator that converts Earth weight to weight on selected planets.          |
+| /nasaimage                | Displays NASA’s Astronomy Picture of the Day using API integration.                       |
+
+## Screenshots
+
+**Home Page**
+
+<img width="1879" height="810" alt="home-title" src="https://github.com/user-attachments/assets/9dd87bfe-dbb1-4904-898a-281f9cd14147" />
+<img width="1881" height="721" alt="image" src="https://github.com/user-attachments/assets/a10cfae6-4929-437f-9490-18c28c97cbf7" />
+
+**Planets**
+
+<img width="1839" height="820" alt="image" src="https://github.com/user-attachments/assets/61e1a07d-bf05-4701-933c-90d3ce4da55d" />
+<img width="1666" height="794" alt="image" src="https://github.com/user-attachments/assets/99314351-f3b8-4e68-ad0c-8b57f423f349" />
+
+**Mars**
+
+
+
+**Fact Generator**
+
+**Weight Calculator**
+
+**Nasa Image of the Day**
+
+
+
