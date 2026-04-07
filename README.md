@@ -62,7 +62,7 @@ npm run preview
 ```text
 /
 ├── public/
-    └── Figma
+|   └── Figma
 ├── src/
 │   ├── components/
 │       ├── FactGenerator.jsx
@@ -78,7 +78,7 @@ npm run preview
 |       ├── planets.astro
 |       ├── weightcalculator.astro
 |   └── styles/
-        ├── global.css
+|       ├── global.css
 ├── astro.config.mjs
 ├── package.json
 └── tsconfig.json
