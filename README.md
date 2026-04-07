@@ -30,18 +30,21 @@ This combination of static pages and interactive widgets creates a fun, educatio
 
 ## Setup Instructions
 
-1. **Clone the repository**  
+1. **Clone the repository**
 ```bash
 git clone https://github.com/YOUR_USERNAME/cosmic-explorer.git
 cd cosmic-explorer
+```
 
-2. **Install dependencies**  
+2. **Install dependencies**
 ```bash
 npm install
+```
 
-3. **Run the development server**  
+3. **Run the development server**
 ```bash
 npm run dev
+```
 
 4. **Open your browser at http://localhost:4321
  to view the app.**  
@@ -50,11 +53,13 @@ npm run dev
 ```bash
 npm run build
 npm run preview
+```
 
 ---
 
 ## Project Structure
 
+```text
 /
 ├── public/               # Static assets like images
 ├── src/
@@ -63,6 +68,7 @@ npm run preview
 ├── package.json
 ├── astro.config.mjs
 └── tsconfig.json
+```
 
 ---
 
